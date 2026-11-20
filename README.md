@@ -27,6 +27,20 @@ Tidak ada undian. Yang dinilai adalah hasil kerja, dan setiap bounty menuliskan 
 >
 > Kode referral saya: `yktkn71n` — link di atas sudah mengandung kode itu.
 
+## Jalur cepat (versi 2 menit)
+
+Untuk kamu yang tidak sabar, seluruh panduan ini ringkasnya begini:
+
+1. **Daftar** di make.fun (bisa dengan akun GitHub) dan hubungkan wallet Solana di profilmu.
+2. **Pilih bounty** yang tugasnya sanggup kamu arahkan, lalu baca aturannya sampai selesai.
+3. **Unduh kit-nya**, hubungkan command line kit ke akunmu dengan `login`.
+4. **Bangun** entry bersama agen AI-mu dalam sesi baru yang dimulai setelah bounty dibuka.
+5. **Periksa** dengan `check`, lalu **kirim** dengan `submit` (atau formulir Enter di halaman bounty).
+6. **Pantau statusnya**; kalau ditolak, perbaiki penyebabnya dan kirim ulang sebelum tenggat.
+7. Kalau masuk peringkat berbayar, **klaim** hadiah USDC ke wallet-mu.
+
+Detail tiap langkah ada di bawah. Istilah yang terasa asing dijelaskan di [glosarium](#glosarium-singkat).
+
 ## Daftar isi
 
 - [Cara kerja make.fun](#cara-kerja-makefun)
@@ -39,6 +53,8 @@ Tidak ada undian. Yang dinilai adalah hasil kerja, dan setiap bounty menuliskan 
 - [Langkah 6 — Cek status, perbaiki, kirim ulang](#langkah-6--cek-status-perbaiki-kirim-ulang)
 - [Langkah 7 — Klaim hadiah](#langkah-7--klaim-hadiah)
 - [Pengalaman saya sendiri](#pengalaman-saya-sendiri)
+- [Tips praktis dari pengalaman saya](#tips-praktis-dari-pengalaman-saya)
+- [Glosarium singkat](#glosarium-singkat)
 - [Dapatkan link referral-mu sendiri](#dapatkan-link-referral-mu-sendiri)
 - [Tanya jawab (FAQ)](#tanya-jawab-faq)
 
@@ -231,6 +247,38 @@ Supaya tidak sekadar teori — ini entry-entry yang sudah benar-benar saya kirim
 Semuanya diarahkan dari HP. Agen yang menulis kodenya, saya yang memilih bounty, membaca hasil pemeriksaan, dan
 memutuskan kapan mengirim. Kalau saya bisa, kamu juga bisa.
 
+## Tips praktis dari pengalaman saya
+
+Beberapa hal yang saya pelajari dengan cara yang agak mahal — supaya kamu tidak perlu mengulanginya:
+
+- **Perhatikan jam buka bounty.** Sesi agen yang dimulai *sebelum* bounty resmi dibuka tidak bisa diikutkan,
+  titik. Kalau bounty dibuka jam 22.00 WIB, mulai sesi barumu setelah jam itu, bukan sebelumnya.
+- **Selalu jalankan `check` sebelum `submit`.** Entry yang ditolak tetap memakan jatah pengiriman harian
+  (biasanya 5 kali sehari, 10 kali total). Pemeriksaan lokal itu gratis dan menyebutkan persis apa yang kurang.
+- **Jangan menunda ke hari terakhir.** Penilaian akhir dan pemeriksaan ulang butuh waktu, dan seri ditentukan
+  oleh siapa yang mengirim lebih dulu. Entry yang masuk lebih awal juga memberimu waktu memperbaiki kalau
+  ditolak.
+- **Biarkan agen menulis berkasnya sendiri.** Pemeriksaan menghitung baris yang benar-benar ditulis agenmu di
+  sesi itu. Menyalin berkas jadi dari tempat lain membuat bagian itu tidak terhitung — dan menyalin starter
+  mentah-mentah tanpa diubah bisa membuat entry ditolak.
+- **Simpan kode klaim dan commit-mu.** Setelah submit, catat commit yang kamu ikutkan dan kode klaim dari
+  `status`. Itu bukti dan peganganmu kalau nanti ada yang perlu dilacak.
+- **Ubah tenggat ke WIB di kepalamu.** Semua jadwal di make.fun tertulis dalam UTC. Kurangi risiko salah hitung
+  dengan langsung menandai tenggatnya di kalender HP-mu dalam waktu lokal.
+
+## Glosarium singkat
+
+| Istilah | Artinya |
+|---|---|
+| Bounty | Satu lomba di make.fun: tugas, aturan, tenggat, dan hadiah. |
+| Kit | Paket unduhan tiap bounty: aturan (`RULES.txt`), data, starter, dan command line `makefun`. |
+| Entry | Karya yang kamu kirim untuk satu bounty. |
+| Transkrip | Log sesi agen AI yang membangun entry; ikut diunggah sebagai bukti kepenulisan. |
+| Escrow | Tempat hadiah dikunci secara on-chain sebelum bounty dibuka, dan dari mana pemenang mengklaim. |
+| USDC | Dolar digital (stablecoin) yang dipakai make.fun untuk semua hadiah. |
+| Wallet | Dompet kripto; di sini wallet Solana, tujuan hadiah USDC dikirim. |
+| Referral | Sistem ajakan: link berkode milikmu yang memberi hadiah saat orang mendaftar dan berpartisipasi lewatnya. |
+
 ## Dapatkan link referral-mu sendiri
 
 Setiap akun punya link referral seperti `https://make.fun/r/<kode>`, dan `?ref=<kode>` pada tautan make.fun mana
@@ -273,6 +321,15 @@ menjalankan penilaian lokal bila ada, membaca hasil pemeriksaan, dan memutuskan 
 Claude Code, Codex, Cursor, GitHub Copilot, Gemini CLI, Qwen Code, opencode, Cline, Roo Code, Kilo Code, Aider,
 dan puluhan lainnya ditemukan kit secara otomatis. Agen lain bisa menyerahkan berkas sesinya lewat
 `bundle --session <berkas>`.
+</details>
+
+<details>
+<summary><strong>Saya cuma punya HP, tidak punya laptop. Bisakah ikut?</strong></summary>
+
+Bisa — penulis panduan ini buktinya. Pendaftaran, memilih bounty, menyetujui koneksi agen, dan memantau status
+semuanya bisa dari browser HP. Pekerjaan membangun dilakukan oleh agen AI-mu; tugasmulah mengarahkannya:
+memilih bounty, membaca hasil pemeriksaan, dan memutuskan kapan mengirim. Yang perlu kamu pastikan hanya
+koneksi internet yang stabil dan akun GitHub untuk repository.
 </details>
 
 <details>
